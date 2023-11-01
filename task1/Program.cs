@@ -30,3 +30,8 @@ int count = 0;
                 }
         }
 
+string[] cutShortStrings = new string[count];
+Array.Copy(shortStrings, cutShortStrings, count);
+
+Console.WriteLine("[" + string.Join(", ", cutShortStrings) + "]");
+Console.WriteLine();
