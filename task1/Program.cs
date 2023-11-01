@@ -17,4 +17,16 @@ string [] stringArray = new string[number];
                     }
         }
 
+Console.WriteLine("Elements in array with 3 or less symbols:");
+
+string[] shortStrings = new string[stringArray.Length];
+int count = 0;
+    for (int i = 0; i < stringArray.Length; i++)
+        {
+            if (stringArray[i].Length <= 3)
+                {
+                    shortStrings[count] = stringArray[i];
+                    count++;
+                }
+        }
 
